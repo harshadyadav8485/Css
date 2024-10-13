@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: flex;
+        width: 600px;
+        border: 1px solid black;
+      }
+
+      .item {
+        padding: 20px;
+        text-align: center;
+        background-color: lightblue;
+        border: 1px solid #ccc;
+      }
+
+      /* Different flex-grow values */
+      .grow1 {
+        flex-grow: 1; /* Grows normally */
+      }
+
+      .grow2 {
+        flex-grow: 2; /* Grows twice as fast as Item 1 */
+      }
+
+      .grow3 {
+        flex-grow: 3; /* Grows three times as fast as Item 1 */
+      }
+      .container {
+        display: flex;
+        width: 300px; /* Less space for items to fit */
+        border: 1px solid black;
+      }
+
+      .item {
+        flex-basis: 200px; /* All items have a default width of 200px */
+        padding: 20px;
+        text-align: center;
+        background-color: lightblue;
+        border: 1px solid #ccc;
+      }
+
+      /* Different flex-shrink values */
+      .shrink1 {
+        flex-shrink: 1; /* Shrinks normally */
+      }
+
+      .shrink2 {
+        flex-shrink: 2; /* Shrinks twice as much as Item 1 */
+      }
+
+      .shrink3 {
+        flex-shrink: 3; /* Shrinks three times as much as Item 1 */
+      }
+      .container {
+        display: flex;
+        width: 600px;
+        border: 1px solid black;
+      }
+
+      .item {
+        padding: 20px;
+        text-align: center;
+        background-color: lightblue;
+        border: 1px solid #ccc;
+      }
+
+      /* Different flex-basis values */
+      .basis100 {
+        flex-basis: 100px; /* Default width is 100px */
+      }
+
+      .basis200 {
+        flex-basis: 200px; /* Default width is 200px */
+      }
+
+      .basis300 {
+        flex-basis: 300px; /* Default width is 300px */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item grow1">Item 1</div>
+      <div class="item grow2">Item 2</div>
+      <div class="item grow3">Item 3</div>
+    </div>
+    <div class="container">
+      <div class="item shrink1">Item 1</div>
+      <div class="item shrink2">Item 2</div>
+      <div class="item shrink3">Item 3</div>
+    </div>
+  </body>
+  <div class="container">
+    <div class="item basis100">Item 1</div>
+    <div class="item basis200">Item 2</div>
+    <div class="item basis300">Item 3</div>
+  </div>
+</html>

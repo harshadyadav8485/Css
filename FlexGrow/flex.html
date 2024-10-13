@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f5f5;
+      }
+      header {
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        max-width: 1200px;
+
+        margin: auto;
+      }
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+      .logo {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #333;
+      }
+
+      .nav-links a {
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        background-color: #f0f0f0;
+        color: #007bff;
+      }
+
+      .nav-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: background-color 0.3s ease;
+      }
+
+      .nav-button:hover {
+        background-color: #0056b3;
+      }
+      .content {
+        padding: 60px;
+        text-align: center;
+      }
+
+      .content h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .content p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #666;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">MY BRAND</div>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="about.html">About</a>
+          <a href="#">Services</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+        </div>
+        <button class="nav-button">Get Started</button>
+      </nav>
+    </header>
+    <div class="content">
+      <h1>Welcome to My Website</h1>
+      <p>
+        This is a modern website design with a clean navigation bar, flexible
+        for all screen sizes.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 MyBrand. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
