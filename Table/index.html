@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 80%;
+        margin: 20% auto;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+      thead th {
+        background-color: #090909;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        border-bottom: 2px solid #ddd;
+      }
+      thead th:hover {
+        background-color: white;
+        color: black;
+      }
+
+      tbody tr {
+        border-bottom: 1px solid #ddd;
+      }
+
+      /* Even rows background color */
+      tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      /* Odd rows hover effect */
+      tbody tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      /* Cell padding */
+      td {
+        padding: 10px;
+      }
+
+      /* Aligning the first column (ID) to the center */
+      td:first-child {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Id">1</td>
+          <td data-label="Name">Harshal</td>
+          <td data-label="Phone">7741878485</td>
+          <td data-label="Address">Phaltan</td>
+        </tr>
+        <tr>
+          <td data-label="Id">1</td>
+          <td data-label="Name">Harshal</td>
+          <td data-label="Phone">7741878485</td>
+          <td data-label="Address">Phaltan</td>
+        </tr>
+        <tr>
+          <td data-label="Id">1</td>
+          <td data-label="Name">Harshal</td>
+          <td data-label="Phone">7741878485</td>
+          <td data-label="Address">Phaltan</td>
+        </tr>
+        <tr>
+          <td data-label="Id">1</td>
+          <td data-label="Name">Harshal</td>
+          <td data-label="Phone">7741878485</td>
+          <td data-label="Address">Phaltan</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
